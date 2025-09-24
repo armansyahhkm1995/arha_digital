@@ -63,7 +63,7 @@ export default function Navbar() {
 
           {/* tampil hanya di mobile */}
           <button
-            className="md:hidden p-2 rounded-lg border border-gray-300"
+            className="md:hidden p-2 rounded-lg border text-black border-gray-300"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
