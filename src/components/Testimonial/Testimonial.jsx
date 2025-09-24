@@ -38,7 +38,7 @@ const testimonials = [
 
 function TestimonialCard({ item }) {
   return (
-    <article className="flex flex-col bg-white rounded-2xl shadow-md p-6 w-full">
+    <article className="flex flex-col bg-white rounded-2xl shadow-md p-6 px-20 w-full">
       <Quote className="w-8 h-8 text-blue-900 mb-3" aria-hidden="true" />
       <p className="text-gray-700 text-base mb-4 text-start">"{item.text}"</p>
       <div className="mt-auto flex justify-between items-center">
@@ -138,7 +138,7 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8 md:px-12">
         {/* Kolom kiri jalan ke atas */}
         <ScrollingColumn items={testimonials} direction="up" />
         {/* Kolom kanan jalan ke bawah */}
