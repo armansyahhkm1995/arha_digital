@@ -20,7 +20,7 @@ export default function Navbar() {
         
         {/* ✅ Logo scroll ke Hero */}
         <ScrollLink
-          to="beranda"    // id di Hero.jsx
+          to="beranda"
           smooth={true}
           duration={500}
           offset={-80}
@@ -40,7 +40,7 @@ export default function Navbar() {
         <nav className="hidden md:flex gap-6" aria-label="Main navigation">
           {navLinks.map((link) => (
             <ScrollLink
-              key={link.to}      // 🔑 tetap ada di sini
+              key={link.to}
               to={link.to}
               smooth={true}
               duration={500}
@@ -54,9 +54,14 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA WhatsApp + Hamburger */}
+        {/* ✅ CTA WhatsApp (desktop only) + Hamburger (mobile only) */}
         <div className="flex items-center gap-4">
-          <WhatsAppButton text="Konsultasi Gratis" className="hidden sm:inline-flex" />
+          {/* tampil hanya di desktop */}
+          <div className="hidden md:inline-flex">
+            <WhatsAppButton text="Konsultasi Gratis" />
+          </div>
+
+          {/* tampil hanya di mobile */}
           <button
             className="md:hidden p-2 rounded-lg border border-gray-300"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -70,10 +75,13 @@ export default function Navbar() {
       {/* ✅ Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t">
-          <nav className="flex flex-col items-start p-4 space-y-3" aria-label="Mobile navigation">
+          <nav
+            className="flex flex-col items-start p-4 space-y-3"
+            aria-label="Mobile navigation"
+          >
             {navLinks.map((link) => (
               <ScrollLink
-                key={link.to}   // 🔑 tetap juga di sini
+                key={link.to}
                 to={link.to}
                 smooth={true}
                 duration={500}
@@ -84,6 +92,7 @@ export default function Navbar() {
                 {link.label}
               </ScrollLink>
             ))}
+            {/* ✅ WhatsApp button hanya di dropdown mobile */}
             <WhatsAppButton text="Konsultasi Gratis" className="w-full" />
           </nav>
         </div>
