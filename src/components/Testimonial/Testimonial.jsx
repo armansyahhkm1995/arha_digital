@@ -138,9 +138,9 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:px-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12">
         {/* Kolom kiri jalan ke atas */}
-        <ScrollingColumn items={testimonials} direction="up"/>
+        <ScrollingColumn items={testimonials} direction="up" />
         {/* Kolom kanan jalan ke bawah */}
         <ScrollingColumn items={testimonials} direction="down" />
       </div>
