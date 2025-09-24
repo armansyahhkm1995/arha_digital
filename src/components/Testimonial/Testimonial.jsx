@@ -140,7 +140,7 @@ export default function Testimonials() {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8 md:px-12">
         {/* Kolom kiri jalan ke atas */}
-        <ScrollingColumn items={testimonials} direction="up" />
+        <ScrollingColumn items={testimonials} direction="up" className="px-50"/>
         {/* Kolom kanan jalan ke bawah */}
         <ScrollingColumn items={testimonials} direction="down" />
       </div>
