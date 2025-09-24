@@ -55,7 +55,7 @@ const FAQSection = () => {
             className=" border-b border-gray-200 pb-6"
           >
             <button
-              className="bg-white text-black w-full flex justify-between items-center text-left font-medium text-lg"
+              className="bg-white w-full flex justify-between items-center text-left font-medium text-lg"
               onClick={() => toggleFAQ(index)}
             >
               <span>{faq.q}</span>
