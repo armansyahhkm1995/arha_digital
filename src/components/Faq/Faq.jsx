@@ -58,7 +58,7 @@ const FAQSection = () => {
               className="bg-white w-full flex justify-between items-center text-left font-medium text-lg"
               onClick={() => toggleFAQ(index)}
             >
-              <span>{faq.q}</span>
+              <span className="text-black">{faq.q}</span>
               <div className="text-black w-6 h-6 flex items-center justify-center">
                 {openIndex === index ? (
                   <ChevronUp size={20} className="text-black" />
