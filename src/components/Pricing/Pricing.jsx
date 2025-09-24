@@ -140,22 +140,7 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-
-                {/* WhatsApp Button bawah fitur
-                <div className="mt-6">
-                  <WhatsAppButton text={`Tanya tentang paket ${plan.name}`} />
-                </div> */}
               </div>
-
-              {/* CTA Button */}
-              <button
-                className={`mt-6 flex items-center justify-center gap-2 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300 ${plan.buttonColor} hover:opacity-90`}
-                aria-label={plan.buttonText}
-                onClick={() => alert(plan.buttonText)}
-              >
-                <MessageCircle className="w-5 h-5" aria-hidden="true" />
-                {plan.buttonText}
-              </button>
             </motion.article>
           ))}
         </div>
@@ -180,15 +165,6 @@ export default function Pricing() {
           <div className="mb-6">
             <WhatsAppButton text="Konsultasi harga via WhatsApp" />
           </div>
-
-          <button
-            className="flex items-center justify-center gap-2 w-full bg-green-600 text-white text-lg font-bold py-3 rounded-md hover:bg-green-700 transition-colors duration-300"
-            aria-label="Pilih paket & konsultasi via form"
-            onClick={() => alert("Pilih Paket & Konsultasi")}
-          >
-            <MessageCircle className="w-5 h-5" aria-hidden="true" />
-            Pilih Paket & Konsultasi
-          </button>
         </motion.div>
       </div>
     </section>
