@@ -52,10 +52,10 @@ const FAQSection = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-white border-b border-gray-200 pb-6"
+            className=" border-b border-gray-200 pb-6"
           >
             <button
-              className="text-black w-full flex justify-between items-center text-left font-medium text-lg"
+              className="bg-white text-black w-full flex justify-between items-center text-left font-medium text-lg"
               onClick={() => toggleFAQ(index)}
             >
               <span>{faq.q}</span>
