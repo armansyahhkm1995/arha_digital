@@ -38,7 +38,7 @@ const testimonials = [
 
 function TestimonialCard({ item }) {
   return (
-    <article className="flex flex-col bg-white rounded-2xl shadow-md p-6 px-20 w-full">
+    <article className="flex flex-col bg-white rounded-2xl shadow-md p-6 w-full">
       <Quote className="w-8 h-8 text-blue-900 mb-3" aria-hidden="true" />
       <p className="text-gray-700 text-base mb-4 text-start">"{item.text}"</p>
       <div className="mt-auto flex justify-between items-center">
