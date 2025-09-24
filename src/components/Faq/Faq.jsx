@@ -44,8 +44,8 @@ const FAQSection = () => {
   }
 
   return (
-    <section className="w-full max-w-3xl mx-auto px-6 py-16">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+    <section className="bg-white w-full max-w-3xl mx-auto px-6 py-16">
+      <h2 className="text-blue-600 text-2xl md:text-3xl font-bold text-center mb-12">
         FAQ & Jawaban
       </h2>
       <div className="space-y-8">
@@ -59,11 +59,11 @@ const FAQSection = () => {
               onClick={() => toggleFAQ(index)}
             >
               <span>{faq.q}</span>
-              <div className="w-6 h-6 flex items-center justify-center">
+              <div className="text-black bg-white w-6 h-6 flex items-center justify-center">
                 {openIndex === index ? (
-                  <ChevronUp size={20} className="text-gray-600" />
+                  <ChevronUp size={20} className="text-black" />
                 ) : (
-                  <ChevronDown size={20} className="text-gray-600" />
+                  <ChevronDown size={20} className="text-black" />
                 )}
               </div>
             </button>
@@ -72,7 +72,7 @@ const FAQSection = () => {
                 openIndex === index ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-gray-600 leading-relaxed text-start">
+              <p className="text-black leading-relaxed text-start">
                 {faq.a}
               </p>
             </div>
