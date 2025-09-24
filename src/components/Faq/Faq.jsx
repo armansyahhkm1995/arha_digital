@@ -55,11 +55,11 @@ const FAQSection = () => {
             className="border-b border-gray-200 pb-6"
           >
             <button
-              className="w-full flex justify-between items-center text-left font-medium text-lg"
+              className="bg-white text-black w-full flex justify-between items-center text-left font-medium text-lg"
               onClick={() => toggleFAQ(index)}
             >
               <span>{faq.q}</span>
-              <div className="text-black bg-white w-6 h-6 flex items-center justify-center">
+              <div className="text-black w-6 h-6 flex items-center justify-center">
                 {openIndex === index ? (
                   <ChevronUp size={20} className="text-black" />
                 ) : (
